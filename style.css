@@ -2,42 +2,110 @@
 body {
     background-color: rgb(254, 251, 243);
     font-family: 'Roboto Slab', serif;
-    line-height: 24px;
+    /* line-height: 24px; */
     padding-top: 100px;
   }
 
-  img {
+  /* img {
     width: 250px
-  }
+  } */
 
-  button {
+  /* button {
     border: none;
     font-size: 16;
     font-weight: bold;
     height: 36px;
     border-radius: 4px;
     background-color: rgb(121, 180, 183);
-  }
+  } */
 
   a {
     text-decoration: none;
-    color: rgb(254, 251, 243);
+    /* color: rgb(254, 251, 243); */
   }
 
-  .header {
+
+
+
+
+
+  .navigation {
     background-color: rgb(121, 180, 183);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    display: inline;
-    flex-flow: row;
+    /* display: inline;
+    flex-flow: row; */
   }
+@media (max-width: 650px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
+}
+
+
+ul#features {
+  float: right;
+}
+
+.navigation ul {
+  font-size: 24px;
+  display: flex;
+  /* padding: 20px 32px 20px 32px; */
+  /* margin: 0px auto 20px auto; */
+  text-align: center;
+  /* height: 50px; */
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+.navigation ul li a {
+  /* padding: 3px 10px 4px 10px; */
+  margin: auto 36px auto 36px;
+  text-decoration: none;
+  /* color: white; */
+  border-radius: 12px;
+  transition-duration: 0.5s;
+}
+
+
+ul#name {
+  float: left;
+}
+ul#name li a{
+  color: red;
+}
+
+/* .navigation ul li a:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  height: 20px;
+} */
+
+/* .navigation a.active {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  height: 20px;
+} */
+
+
+
+
+
+
+
+
 
   h1 {
     color:rgb(254, 251, 243);
     line-height: 36px;
-    text-align: center;
+    text-align: left;
+    margin-left: 24px;
   }
 
   .card {

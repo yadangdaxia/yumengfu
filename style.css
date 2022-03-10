@@ -1,0 +1,83 @@
+
+body {
+    background-color: rgb(254, 251, 243);
+    font-family: 'Roboto Slab', serif;
+    line-height: 24px;
+    padding-top: 100px;
+  }
+
+  img {
+    width: 250px
+  }
+
+  button {
+    border: none;
+    font-size: 16;
+    font-weight: bold;
+    height: 36px;
+    border-radius: 4px;
+    background-color: rgb(121, 180, 183);
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(254, 251, 243);
+  }
+
+  .header {
+    background-color: rgb(121, 180, 183);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline;
+    flex-flow: row;
+  }
+
+  h1 {
+    color:rgb(254, 251, 243);
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .card {
+    width: 600px;
+    height: 300px;
+    /* Centering */
+    margin: 30px auto 30px auto;
+    background-color: rgb(248, 240, 223);
+    padding: 10px 20px 10px 20px;
+    /* box shadow syntax:  offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 10px 10px rgba(0 0 0 / 0.2);
+  }
+
+  .footer {
+    width: 600px;
+    /* Centering */
+    margin: 30px auto 30px auto;
+    background-color: rgb(248, 240, 223);
+    padding: 10px 20px 10px 20px;
+    /* box shadow syntax:  offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 10px 10px rgba(0 0 0 / 0.2);
+    text-align: center;
+  }
+
+
+
+
+
+
+
+  /* iphone */
+  @media (max-width: 350px) {
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+      }
+      .card {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+      }
+    }

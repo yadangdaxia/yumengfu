@@ -1,6 +1,6 @@
 
 body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding-top: 100px;
 
     /* font-family: 'Architects Daughter', cursive;
@@ -23,20 +23,24 @@ body {
 
 
   .navigation {
-    background-color: rgb(121, 180, 183);
+    /* background-color: rgb(121, 180, 183);
+    opacity: .5; */
+        background-color: #FFFFFF;
     width: 100%;
-    position: fixed;
+    /* change position to fixed to keep navbar fixed at top */
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
   }
-@media (max-width: 650px) {
+
+/* @media (max-width: 768px) {
   .navigation {
     display: flex;
     justify-content: space-between;
     flex-flow: column;
   }
-}
+} */
 
 .navigation ul {
   font-size: 24px;
@@ -49,7 +53,7 @@ body {
 }
 
 .navigation ul li a {
-  margin: auto 36px auto 36px;
+  margin: auto 32px auto 32px;
   text-decoration: none;
   /* border-radius: 12px; */
   /* transition-duration: 0.5s; */
@@ -59,17 +63,20 @@ body {
   float: left;
 }
 .navigation ul#name li a{
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
 .navigation ul#features {
   float: right;
+  padding-right: 28px;
 }
 .navigation ul#features li a{
-  color: white;
+  color: black;
   font-weight: bold;
 }
+
+
 
 
 
@@ -97,13 +104,16 @@ body {
     display: inline;
 }
 
-
+.grid-col--1 {
+    /* margin: 1.2em; */
+}
 
 .grid-item {
   /* transition-duration: 2s;
   transition-property: display; */
   position: relative;
   /* overflow-wrap: break-word; */
+
   margin: 1.2em;
 
   /* overflow: hidden; */
@@ -116,7 +126,7 @@ img {
 }
 
 .white-image {
-  border: 2px solid rgb(122, 116, 116);
+  border: 0px solid rgb(122, 116, 116);
 }
 
 
@@ -171,7 +181,7 @@ img {
         width: 80%;
     }
     img {
-      margin-bottom: 1.2em;
+      /* margin-bottom: 1.2em; */
     }
 }
 
@@ -180,12 +190,28 @@ img {
 
 /* Mobile layout */
 @media (max-width: 768px) {
+
+    body {
+      margin: 0;
+      /* padding-top: 50px; */
+    }
     .container {
-        width: 90%;
+        width: 100%;
     }
     .grid-col--2, .grid-col--3 { display: none; }
-    .grid-col {
-        /* padding: 0 .5em; */
+    /* .grid-col {
+        margin: 0;
+        width: 100%;
+    } */
+
+    /* .grid-col--1{
+              margin: 0;
+              padding: 0;
+              width: 100%;
+    } */
+
+    .grid-item {
+         margin: 0;
     }
     .grid-item:hover {
         cursor: pointer;

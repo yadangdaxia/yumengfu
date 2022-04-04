@@ -4,13 +4,16 @@ var colc = new Colcade('.grid', {
 });
 
 
-const image = document.querySelectorAll('img')
-console.log(image)
-image.forEach((pic) => {
+const images = document.querySelectorAll('img')
+images.forEach((pic) => {
   console.log(pic)
-  pic.addEventListener('click', (e) => {
-    console.log(e)
-    // pic.innerText="hi"
+
+
+  pic.addEventListener('mouseover', (e) => {
+    console.log(e, "youre hovering")
+    // pic.innerText = title
+    const title = document.querySelector('.image-text')
+    console.log(title.innerText, "title here")
   });
 });
 

@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.metro-container {
+    width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide{
+    0% { transform: translateX(0); }
+    8% { transform: translateX(0); }
+
+    21% { transform: translateX(-100%); }
+    32% { transform: translateX(-100%); }
+
+    43% { transform: translateX(-200%); }
+    54%{ transform: translateX(-200%); }
+
+    65% { transform: translateX(-300%); }
+    76% { transform: translateX(-300%); }
+
+    88% { transform: translateX(-400%); }
+    100% { transform: translateX(-400%); }
+
+
+
+}
+img{
+    width: 100%;
+}

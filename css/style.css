@@ -8,8 +8,7 @@
 
 
 body {
-    background-color: #867979;
-
+    background-color: #ffffff;
     /* font-family: 'Architects Daughter', cursive; */
     /* font-family: 'Bungee', cursive; */
     /* font-family: 'Indie Flower', cursive; */
@@ -47,11 +46,14 @@ body {
   padding-left: 2em;
   padding-right: 2em;
   cursor: pointer;
+  line-height: 2em;
 }
 
 #tags {
-  margin: 10 auto 10;
+  /* centers */
+  margin: 12 auto 12;
 }
+
 
 /* View categories */
 .active {
@@ -226,6 +228,18 @@ img {
 .landscape img {
     height: 100%;
     width: 100%;
+}
+.about-photo {
+  margin: 40px;
+  text-align: center;
+}
+
+.medium img {
+  width: auto;
+  height: 30em;
+}
+.about-description {
+  margin: 40px;
 
 }
 

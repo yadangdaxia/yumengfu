@@ -1,24 +1,22 @@
-console.log('Are you receiving me?')
-// import Splide from '@splidejs/splide';
 
 
-var colc = new Colcade('.grid', {
-  columns: '.grid-col',
-  items: '.grid-item'
-});
+// var colc = new Colcade('.grid', {
+//   columns: '.grid-col',
+//   items: '.grid-item'
+// });
 
 
-const images = document.querySelectorAll('img')
-images.forEach((pic) => {
-  console.log(pic)
+// const images = document.querySelectorAll('img')
+// images.forEach((pic) => {
+//   console.log(pic)
 
-  pic.addEventListener('mouseover', (e) => {
-    console.log(e, "youre hovering")
-    // pic.innerText = title
-    const title = document.querySelector('.image-text')
-    console.log(title.innerText, "title here")
-  });
-});
+//   pic.addEventListener('mouseover', (e) => {
+//     console.log(e, "youre hovering")
+//     // pic.innerText = title
+//     const title = document.querySelector('.image-text')
+//     console.log(title.innerText, "title here")
+//   });
+// });
 
 
 
